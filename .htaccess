@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^$ public/ [L]
+  RewriteRule (.*) public/$1 [L]
+
+  <IfModule mod_php7.c>
+    php_value date.timezone America/Sao_Paulo
+    php_value error_log "../log/php_errors.log"
+    php_value safe_mode Off
+    php_value max_execution_time 30
+  </IfModule>
+</IfModule>

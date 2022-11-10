@@ -1,0 +1,12 @@
+{
+  "name": "volkkertech/library",
+  "description": "PHP Phalcon bootstrap application",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Luciano Stegun",
+      "email": "lucianostegun@gmail.com"
+    }
+  ],
+  "require": {}
+}

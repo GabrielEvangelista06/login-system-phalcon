@@ -1,0 +1,5 @@
+cache/*
+log/*
+sessions/*
+library/vendor
+library/vendor/*
