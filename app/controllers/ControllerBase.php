@@ -16,12 +16,11 @@ class ControllerBase extends Controller {
 
     $this->assets->collection('header')
       ->addCss('https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css')
-      ->addCss('https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap-theme.min.css')
       ->addCss('/css/app.css');
 
     $this->assets->collection('footer')
-      ->addJs('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js')
-      ->addJs('/js/app.js');
+    ->addJs('https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js')
+    ->addJs('/js/app.js');
 
     $this->view->setMainView('layout');
   }

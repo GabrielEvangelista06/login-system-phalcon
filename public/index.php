@@ -1,6 +1,8 @@
 <?php
 
 use Phalcon\Di\FactoryDefault;
+use Phalcon\Session\Adapter\Files as Session;
+
 
 $app = 'frontend';
 

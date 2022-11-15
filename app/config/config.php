@@ -6,6 +6,14 @@ return new \Phalcon\Config([
   'session' => [
     'handler'  => 'files',
   ],
+  'database' => [
+    'adapter' => 'Postgresql',
+    'host' => 'host.docker.internal',
+    'username' => 'postgres',
+    'password' => '1234',
+    'dbname' => 'logindb',
+    'port'     => 5432,
+  ],
   'project' => [
     'libraryDir'    => BASE_PATH . '/library/',
     'vendorDir'     => BASE_PATH . '/library/vendor/',
