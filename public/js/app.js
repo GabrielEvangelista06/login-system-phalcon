@@ -5,7 +5,7 @@ $(document).ready(function () {
 function validateLogin() {
   $('#loginForm').on('submit', function (evt) {
     $.ajax({
-      url: '/pagina/autenticacao',
+      url: '/login/auth',
       method: 'POST',
       data: $('#loginForm').serialize(),
       success: function (result) {
